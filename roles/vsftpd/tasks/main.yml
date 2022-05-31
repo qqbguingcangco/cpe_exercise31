@@ -1,0 +1,8 @@
+---
+# tasks file for vsftpd
+- name: install vsftpd
+  apt:
+    name:
+      - vsftpd
+    state: latest
+  when: ansible_distribution == "Ubuntu"

@@ -1,0 +1,9 @@
+---
+# tasks file for bind9
+- name: install bind9
+  apt:
+    name:
+      - bind9
+    state: latest
+    update_cache: yes
+  when: ansible_distribution == "Ubuntu"

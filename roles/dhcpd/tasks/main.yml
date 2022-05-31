@@ -1,0 +1,8 @@
+---
+# tasks file for dhcpd
+- name: install dhcpd
+  apt:
+    name: isc-dhcp-server
+    state: latest
+    update_cache: yes
+  when: ansible_distribution == "Ubuntu"

@@ -1,0 +1,7 @@
+[Ubuntu]
+server2 ansible_host=192.168.0.30
+workstation ansible_host=192.168.0.31
+[CentOS]
+centOSworkstation ansible_host=192.168.0.32
+[Alpine]
+AlpineVM ansible_host=192.168.0.29 ansible_ssh_pass=k7hwrath ansible_ssh_user=root
